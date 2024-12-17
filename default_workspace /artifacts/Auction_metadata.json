@@ -6,42 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_id",
 						"type": "uint256"
-					}
-				],
-				"name": "Certificates",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "course",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "grade",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "date",
+						"name": "_newownername",
 						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "changeowner",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -53,28 +32,57 @@
 					},
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "_ownername",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "_course",
+						"name": "_plot",
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "_grade",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_date",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
 					}
 				],
 				"name": "issue",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "plotauctions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ownername",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "plot",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "owneraddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -91,7 +99,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"default_workspace /Certi.sol": "Certi"
+			"default_workspace /Auction.sol": "Auction"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -105,12 +113,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"default_workspace /Certi.sol": {
-			"keccak256": "0x81fe9d1088f2581ffa380e7c48fd8958f9afb674200855c82ee1fbbd69a2d998",
+		"default_workspace /Auction.sol": {
+			"keccak256": "0x01a26cafb8166a7a891053fcf1f4441b0c5e464a217a0abec6e59c23d79c06e4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f228dcc1b7b619178c91ee96b5b3980a45db21bf4d34fcb0818a316aadb9d312",
-				"dweb:/ipfs/QmcmLxkgw4vG8PjX8JS43uYS2VR4DjAYgWxogL2ACz9yxk"
+				"bzz-raw://aa86c99f7c88b9df7ba3384e0bb7847d885e40363a1de03bcc8f8b5c9df818e9",
+				"dweb:/ipfs/QmeWYPNPEQzVSunFTECGsyaLhj54HeV5WuFCBfcnmwxnrb"
 			]
 		}
 	},

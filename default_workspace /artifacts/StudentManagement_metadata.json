@@ -1,0 +1,182 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_sem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentManagement.Department",
+						"name": "_dept",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_CGPA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rollno",
+						"type": "uint256"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_sem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentManagement.Department",
+						"name": "_dept",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_CGPA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rollno",
+						"type": "uint256"
+					}
+				],
+				"name": "editData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rollno",
+						"type": "uint256"
+					}
+				],
+				"name": "editName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_rollno",
+						"type": "uint256"
+					}
+				],
+				"name": "getStudent",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentManagement.Department",
+						"name": "dept",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "CGPA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rollno",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "staffAdvisor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"default_workspace /StudentManagement.sol": "StudentManagement"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"default_workspace /StudentManagement.sol": {
+			"keccak256": "0xc98dda8fdd3e6953f2534fb2889efc1bafe16d7f50c8c04794abf59f293caf6f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83200c83fe1977e3e241a1c54afa3b2fcc5159a9370633529b39a683fe53c6a7",
+				"dweb:/ipfs/QmTrAEyeJEB4ova9mmX3YQEgVPQ4xhLQd6g1iQRf39RRQN"
+			]
+		}
+	},
+	"version": 1
+}

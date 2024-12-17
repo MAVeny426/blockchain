@@ -3,7 +3,7 @@
 
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.28;
-contract Activity3 {
+contract EmployeeRecord {
 struct emp{    
     string  name;
     string  department;
